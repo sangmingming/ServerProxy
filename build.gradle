@@ -17,15 +17,16 @@ repositories {
 }
 
 dependencies {
-	implementation 'com.android.support:support-v4:18.0.+'
+	implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
 
 android {
     compileSdkVersion 33
 
     defaultConfig {
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 30
-        minSdkVersion = 23      
+        minSdkVersion 23
     }
 
     sourceSets {
